@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reminder</title>
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+
+<link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+<body style="background-color: #e9edc9;">
+    <div class="container">
+        <button class="btn btn-danger" onclick="back()">Back</button>
+        <center>
+            <h1 class="header" style="font-family: cursive; font-weight: bold; color:#859767; width:50%">REMINDER
+            <sup><img style="width:100px;height: 100px;"src="reminder_bell.png"></sup>
+            </h1>
+<input type="date" id="date" placeholder="Enter The Date" class="form-control">
+            <div style="text-align: left;margin-bottom: 70px;" id="output">
+            </div>
+<br>
+<br>
+            <div class="input_div_reminder" style="border: 3px #3d4910 solid;padding-top: 20px;padding-bottom: 10px; padding-left:10px;padding-right: 10px; background-color: beige; ">
+                <label style="font-size: 18px; color:rgb(175, 121, 54)">Add a Reminder:</label>
+                <br>
+              <label>Enter the time of the reminder:</label><input style="background-color: rgb(232, 199, 157);" id="time" type="time" placeholder="Enter the time of the reminder" class="form-control">
+              <label>Enter the reminder:</label>  
+              <input id="reminder" placeholder="Enter the Reminder here" class="form-control" style="background-color: rgb(211, 170, 116); color:white;">
+                    
+                    <br>
+                <button class="btn btn-success " onclick="add_reminder()">Add</button>
+            </div>
+        </center>
+    </div>
+</body>
+<script src="reminder.js"></script>
+</html>

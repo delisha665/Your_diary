@@ -1,0 +1,33 @@
+#underline {
+    height: 3px;
+    width: 500px;
+    background-color: darkblue;
+}
+
+body {
+    background-color: #ffc8dd;
+}
+
+#logIn {
+    background-color: #cdb4db;
+    height: 500px;
+    width: 550px;
+    border: 5px #ffafcc solid;
+    border-radius: 13px;
+}
+
+#username,
+#password {
+    border: #B2DAFF 4px solid;
+}
+
+
+.input_div_reminder {
+    width: 80%;
+    position: absolute;
+    bottom:5px;
+}
+/* .header
+{
+	color: white;font-family: 'Yeon Sung';font-size: 45px;letter-spacing: 10px;margin-top: 80px;
+} */
